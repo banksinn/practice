@@ -1,0 +1,90 @@
+/* * {
+    background-color:darkseagreen;
+} */
+
+body {
+    background-color: #f1faee;
+}
+
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+/* h1 and h2 */
+h1,h2 {
+    color: #1d3557;
+}
+
+/* id */
+#signup {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+#back {
+    color: #457b9d
+}
+
+span {
+    color: #457b9d;
+}
+
+/* class */
+.tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+}
+
+/* descendent ลูกหลานที่อยู่ในนั้นใช้ได้หมด*/
+.post a {
+    color: #457b9d;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer a {
+    color: #e63946;
+}
+
+/* adjacent selector (ที่อยู่ติดกัน indent เดัยวกัน) */
+h2 + button {
+    font-size: 20px;
+}
+
+/* direct child เลือกตรงๆ */
+footer > a {
+    color: #457b9d;
+}
+
+/* attribute selector */
+input[type="password"] {
+    color: red;
+}
+
+/* attribute*= คือมี google ใน www.google.com หรือใช้ attribute$=".com" คือ ลงท้ายด้วย .com */
+a[href*="google"] {
+    color: magenta;
+}
+
+/* a[href$=".com"] {
+    color: magenta;
+} */
+
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: #02c39a; 
+}
+
+.post:nth-of-type(2n) {
+    background-color: #dfe8dc;
+}
